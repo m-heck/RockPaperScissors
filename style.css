@@ -32,7 +32,7 @@
 .mid-container {
     display: flex;
     padding: 20px;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -45,7 +45,8 @@
     align-items: center;
     flex-direction: column;
     width: 300px;
-    max-width: 30vw;
+    max-width: 30vw
+
 }
 
 .button-container {
@@ -75,6 +76,12 @@
     width: 400px;
     height: auto;
     max-width: 50vw;
+}
+
+.playerMove .computerMove {
+    flex: auto;
+    width: 200px;
+    max-width: 10vw;
 }
 
 h2 {

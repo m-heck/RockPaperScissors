@@ -25,49 +25,49 @@ const playRound = function(playerSelection) {
     let gameState = 0;
     if (playerSelection == computerSelection) {
         if (playerSelection == 'paper') {
-            playerMove.innerHTML = '<img src="paper.png" alt="Image of paper" width="200">';
-            computerMove.innerHTML = '<img src="paper.png" alt="Image of paper" width="200">';
+            playerMove.innerHTML = '<img src="paper.png" alt="Image of paper" width="200" max-width: 10vw flex-shrink: 2>';
+            computerMove.innerHTML = '<img src="paper.png" alt="Image of paper" width="200" max-width: 10vw flex-shrink: 2>';
         } else if (playerSelection == 'scissors') {
-            playerMove.innerHTML = '<img src="scissors.png" alt="Image of a scissors" width="200">';
-            computerMove.innerHTML = '<img src="scissors.png" alt="Image of scissors" width="200">';
+            playerMove.innerHTML = '<img src="scissors.png" alt="Image of a scissors" width="200" max-width: 10vw flex-shrink: 2>';
+            computerMove.innerHTML = '<img src="scissors.png" alt="Image of scissors" width="200" max-width: 10vw flex-shrink: 2>';
         } else {
-            playerMove.innerHTML = '<img src="rock.png" alt="Image of a rock" width="200">';
-            computerMove.innerHTML = '<img src="rock.png" alt="Image of a rock" width="200">';
+            playerMove.innerHTML = '<img src="rock.png" alt="Image of a rock" width="200" max-width: 10vw flex-shrink: 2>';
+            computerMove.innerHTML = '<img src="rock.png" alt="Image of a rock" width="200" max-width: 10vw flex-shrink: 2>';
         }
         
         return 0;
     };
     switch (playerSelection) {
         case "rock":
-            playerMove.innerHTML = '<img src="rock.png" alt="Image of a rock" width="200">';
+            playerMove.innerHTML = '<img src="rock.png" alt="Image of a rock" width="200" max-width: 10vw flex-shrink: 2>';
             if (computerSelection === "paper") {
                 gameState = 2;
-                computerMove.innerHTML = '<img src="paper.png" alt="Image of paper" width="200">';
+                computerMove.innerHTML = '<img src="paper.png" alt="Image of paper" width="200" max-width: 10vw flex-shrink: 2>';
             }
             else {
                 gameState = 1;
-                computerMove.innerHTML = '<img src="scissors.png" alt="Image of scissors" width="200">';
+                computerMove.innerHTML = '<img src="scissors.png" alt="Image of scissors" width="200" max-width: 10vw flex-shrink: 2>';
             }
             break;
         case "paper":
-            playerMove.innerHTML = '<img src="paper.png" alt="Image of paper" width="200">';
+            playerMove.innerHTML = '<img src="paper.png" alt="Image of paper" width="200" max-width: 10vw flex-shrink: 2>';
             if (computerSelection === "rock") {
                 gameState = 1;
-                computerMove.innerHTML = '<img src="rock.png" alt="Image of a rock" width="200">';
+                computerMove.innerHTML = '<img src="rock.png" alt="Image of a rock" width="200" max-width: 10vw flex-shrink: 2>';
             }
             else {
                 gameState = 2;
-                computerMove.innerHTML = '<img src="scissors.png" alt="Image of scissors" width="200">';
+                computerMove.innerHTML = '<img src="scissors.png" alt="Image of scissors" width="200" max-width: 10vw flex-shrink: 2>';
             }
             break;
         case "scissors":
-            playerMove.innerHTML = '<img src="scissors.png" alt="Image of a scissors" width="200">';
+            playerMove.innerHTML = '<img src="scissors.png" alt="Image of a scissors" width="200" max-width: 10vw flex-shrink: 2>';
             if (computerSelection === "rock") {
                 gameState = 2;
-                computerMove.innerHTML = '<img src="rock.png" alt="Image of a rock" width="200">';}
+                computerMove.innerHTML = '<img src="rock.png" alt="Image of a rock" width="200" max-width: 10vw flex-shrink: 2>';}
             else {
                 gameState = 1;
-                computerMove.innerHTML = '<img src="paper.png" alt="Image of paper" width="200">';
+                computerMove.innerHTML = '<img src="paper.png" alt="Image of paper" width="200" max-width: 10vw flex-shrink: 2>';
             }
             break;
         default:
