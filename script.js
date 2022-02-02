@@ -48,35 +48,29 @@ function game() {
     let ties = 0;
     let losses = 0;
 
-    for (let i = 0; i < 5; i++) {
-        console.log(`Let's begin round ${roundNum}`);
-        
-        let playerSelection = window.prompt("Rock, paper, or scissors?");     
-        let computerSelection = computerPlay();
-        console.log(`Player selection: ${playerSelection}; Computer Selection: ${computerSelection}`);
-        switch (playRound(playerSelection, computerSelection)) {
-            case 0:
-                console.log(`It is a tie! You both played ${playerSelection}`);
-                ties++;
-                break;
-            case 1:
-                console.log(`You win! ${playerSelection} beats ${computerSelection}`);
-                winNum++;
-                break;
-            case 2:
-                console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
-                losses++;
-                break;
-            case -1:
-                console.log("There was an error. Please enter a valid number.");
-                i--;
-                continue;
-        }
-        
-        roundNum++;
-        console.log(`You have ${winNum} wins.`);
-        
-    }
+    console.log(`Let's begin round ${roundNum}`);
+    
+    let playerSelection = window.prompt("Rock, paper, or scissors?");     
+    let computerSelection = computerPlay();
+    console.log(`Player selection: ${playerSelection}; Computer Selection: ${computerSelection}`);
+    switch (playRound(playerSelection, computerSelection)) {
+        case 0:
+            console.log(`It is a tie! You both played ${playerSelection}`);
+            ties++;
+            break;
+        case 1:
+            console.log(`You win! ${playerSelection} beats ${computerSelection}`);
+            winNum++;
+            break;
+        case 2:
+            console.log(`You lose! ${computerSelection} beats ${playerSelection}`);
+            losses++;
+            break;
+        case -1:
+            console.log("There was an error. Please enter a valid number.");
+            i--;
+            continue;
+    console.log(`You have ${winNum} wins.`);
 
     console.log("The five games are over.");
     console.log(`You had a total of ${winNum} wins, ${ties} ties, and ${losses} losses.`);

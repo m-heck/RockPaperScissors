@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.container img {
+    margin: 100px;
+    margin-top: 70px;
+}
+
+.button-container {
+    align-self: center;
+    justify-content: center;
+    display: 
+    flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.button-container button {
+    color: #EEE9E3;
+    font-family: 'Courier New', "Lucida Console", monospace;
+    font-weight: bold;
+}
+
+#title {
+    font-family: 'Courier New', "Lucida Console", monospace;
+    color: #C5A586;
+    text-align: center;
+    font-size: 40px;
+}
+
+button {
+    border: 2px solid #C5A586;
+    background-color: #c5a686b7;
+    border-radius: 4px;
+    width: 150px;
+    height: 50px;
+}
